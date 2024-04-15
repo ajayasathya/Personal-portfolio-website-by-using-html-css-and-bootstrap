@@ -1,0 +1,328 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body {
+  
+    color: #ededed;
+
+}
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+logo {
+
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+  
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 33px;
+    transition: .3s;
+
+}
+
+.navbar a:hover {
+
+    color: #0ef;
+
+
+}
+
+.home {
+
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(Images/sathya1.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(0) rotate(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0) rotate(0deg);
+    }
+}
+.home-content {
+
+    animation: slideIn 1s ease-in-out; 
+}
+
+.about {
+    background-color: rgb(46, 18, 46);
+    width: 100%;
+    padding: 88px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+    flex-wrap: wrap;
+    
+}
+
+.container .col-md-6 {
+    flex-basis: 50%; /* Adjust the width of columns */
+}
+
+.container .col-md-6 img {
+    width: 93%;
+    border-radius: 25px;
+}
+
+.container .col-md-6 h1 {
+    text-align: center; /* Center the heading */
+    color: #fff; /* Set text color to white */
+}
+
+.container .col-md-6 p {
+    color: #fff; /* Set text color to white */
+    text-align: justify; /* Align paragraph text to the left */
+   
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.row .col-md-6 p {
+    animation: slideInLeft 1s forwards;
+}
+
+.container_education {
+    background-color: rgb(46, 18, 46);
+    padding: 80px 0;
+}
+
+.container_education h1 {
+    text-align: center;
+    color: white; /* Adding color to the text */
+    padding: 60px;
+}
+
+.container_education .card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 425px;
+    margin: 10px;
+    padding: 30px;
+    background-color:  rgb(34, 9, 34);
+    border-radius: 30px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 10px 0 rgb(68, 77, 202);
+}
+
+
+.container_education .card:hover {
+    box-shadow: 0 0 20px 5px #0ef; 
+}
+
+.container_education .card-body {
+    padding: 10px;
+}
+
+.container_education .card h3 {
+    margin-bottom: 10px; 
+}
+
+
+
+/*skills*/
+
+
+.container_skills {
+    background-color: rgb(46, 18, 46);
+    padding: 20px 0;
+}
+
+.container_skills h1 {
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+.container_skills .card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 30px;
+    background-color:   rgb(34, 9, 34);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 rgb(68, 77, 202);
+    height: 400px; /* Set a fixed height for all cards */
+}
+
+.container_skills .card:hover {
+    box-shadow: 0 0 20px 10px #0ef;
+}
+
+.container_skills .card-body div {
+    background-color: #262626;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 250;
+    border-right: 10px;
+}
+
+.container_skills .card-body div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container_skills .card h3 {
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------projects-------------------------------------*/
+
+
+.container_projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(46, 18, 46);
+    padding: 80px 0;
+}
+
+.container_projects h1 {
+    text-align: center;
+    color: white;
+    padding: 40px; 
+    align-items: center;
+    width: 100%; 
+    margin-top: 0; 
+}
+
+.car-container {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.car-container:hover {
+    transform: scale(1.05);
+}
+
+.car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.car-details {
+    text-align: center;
+    margin-top: 10px;
+    color: #262626;
+   /* text-align: justify; */
+}
+
+
+*/--------------contact-------------------------*/
+
+
+/* Add your custom CSS here */
+
+.contact {
+    background-color: #f9f9f9; 
+    padding: 10px 0;
+  }
+  
+  .contact h1 {
+    color: #333; /
+  }
+  
+  .contact p {
+    color: #555;
+  }
+  
+  .social-media a {
+    color: #0ef; 
+    font-size: 50px; 
+    margin-right: 10px; 
+  }
+
+  
+  .contact form {
+    margin-top: 20px; 
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 22.5px; 
+  }
+  
+  .contact button[type="submit"] {
+    background-color: #7619ce; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .contact button[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+  
+  
+  /*----------------------back-button------------------*/
+
+ 
